@@ -29,14 +29,13 @@ Work through database concepts step by step:
 - **Container:** `learn-postgres`
 - **Host:** localhost
 - **Port:** 5432
-- **User:** chris
-- **Password:** chris
+- **Credentials:** see .env file (never committed)
 - **Database:** learn_db
 - **Start:** `docker start learn-postgres`
 - **Stop:** `docker stop learn-postgres`
-- **Connect:** `docker exec -it learn-postgres psql -U chris -d learn_db`
+- **Connect:** `docker exec -it learn-postgres psql -U $DB_USER -d learn_db`
 
 ## Running locally
 - Python: `C:/Users/chris/AppData/Local/Python/bin/python.exe`
 - Never commit `.env` files
-- Never touch the vejle-parking production server (165.22.73.33) from this project
+- Never touch the vejle-parking production server from this project
